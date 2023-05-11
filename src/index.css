@@ -1,0 +1,659 @@
+body {
+  margin: 0;
+  font-family: "PP Neue Montreal";
+  background-color: #fffaf3;
+  color: #aa7850;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 300;
+  src: url("./fonts/PPNeueMontreal-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 400;
+  src: url("./fonts/PPNeueMontreal-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 700;
+  src: url("./fonts/PPNeueMontreal-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: italic;
+  src: url("./fonts/PPNeueMontreal-Italic.otf") format("opentype");
+}
+.Navbar {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #aa7850;
+}
+.Navbar section {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.Navbar .left span {
+  font-family: "PP Neue Montreal";
+  color: #aa7850;
+  font-weight: 400;
+  font-size: 22px;
+}
+.Navbar .right span {
+  font-family: "PP Neue Montreal";
+  color: #aa7850;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.heroSection section {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  max-height: 100%;
+}
+.heroSection span,
+.midSection .content p {
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 225px;
+}
+.heroSection {
+  height: 100vh;
+  width: 100%;
+}
+.heroSection section {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+}
+.heroSection .imagesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.one {
+  width: 32%;
+}
+.two {
+  width: 65%;
+}
+.heroSection img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+.slide {
+  max-width: 450px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.gradient {
+  background: linear-gradient(180deg, rgba(170, 120, 80, 0) 0%, #aa7850 100%);
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 5px;
+}
+.gradient h3 {
+  font-family: "PP Neue Montreal";
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+.collection {
+  height: 100vh;
+  width: 100%;
+}
+.collection section {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+}
+.collection span {
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 70px;
+}
+.midSection {
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.midSection .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #aa7850;
+  width: 100%;
+  padding: 0;
+}
+.midSection .content p {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  color: #715035;
+}
+.shop-component {
+  background: rgba(170, 120, 80, 0.2);
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-component-image {
+  height: 70%;
+  width: auto;
+}
+
+.shop-component-name {
+  margin-top: 10px;
+}
+
+.shop-component-price {
+  margin-top: 5px;
+}
+.gridComponent {
+  padding: 100px;
+}
+.GridSection {
+  padding: 250px 0;
+  width: 100%;
+}
+.GridSection section {
+  margin: 0 250px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.GridSection .row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.GridSection .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.reviewSection {
+  display: flex;
+  height: 60vh;
+}
+.reviewSection .left {
+  width: 50%;
+  background-color: #aa7850;
+  padding: 20px;
+  color: white;
+}
+
+.reviewSection .right {
+  width: 50%;
+  background-image: url("./images/bg2.png");
+  background-size: cover;
+  background-position: center;
+
+  text-align: left;
+  padding: 20px;
+}
+.reviewSection section,
+.reviewSection .slick-slider,
+.reviewSection .slick-list,
+.reviewSection .slick-track,
+.reviewSection .slick-slide,
+.reviewSection .slick-slide > div {
+  height: 100%;
+}
+
+.reviewSection .review {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.reviewSection .review > p {
+  font-family: "PP Neue Montreal";
+
+  font-weight: 300;
+  font-size: 24px;
+
+  max-width: 90%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.8s;
+}
+.reviewSection .slick-active .review > p,
+.reviewSection .slick-active .reviewerdiv {
+  opacity: 1;
+}
+.reviewSection .reviewerdiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1.2s;
+}
+.reviewSection .reviewer {
+  font-family: "PP Neue Montreal";
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #fffaf3;
+}
+.reviewSection .navigation {
+  cursor: pointer;
+  font-weight: 700;
+}
+.reviewSection .navigationContainer {
+  display: flex;
+  width: 45px;
+
+  justify-content: space-between;
+}
+
+.reviewSection .navigation:first-child {
+  color: #fff;
+}
+
+.reviewSection .navigation:last-child {
+  color: #fff;
+}
+
+.reviewSection .right > div {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 8px 26px;
+  color: #fff;
+  width: fit-content;
+}
+.reviewSection .right > div:hover {
+  background-color: #fff;
+  color: #aa7850;
+}
+/* Footer.css */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-text {
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  color: #aa7850;
+}
+
+.shop-now {
+  padding: 8px 26px;
+  border: 1px solid #aa7850;
+  border-radius: 100px;
+}
+.shop-now > p {
+  margin: 0;
+}
+.second-section {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.section-text-large {
+  font-weight: 300;
+  font-size: 350px;
+  margin: 0;
+}
+@media screen and (max-width: 1700px) {
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 20px;
+  }
+  .slide,
+  .shop-component {
+    max-width: 380px;
+    height: 380px;
+  }
+  .midSection .content p {
+    font-size: 200px;
+  }
+  .GridSection section {
+    margin: 0 230px;
+  }
+  .reviewSection .review > p {
+    font-size: 20px;
+  }
+  .section-text-large {
+    font-size: 300px;
+  }
+  .collection span {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .heroSection span,
+  .midSection .content p {
+    font-size: 180px;
+  }
+  .gradient h3 {
+    font-size: 18px;
+  }
+  .collection span {
+    font-size: 50px;
+  }
+  .shop-component {
+    max-width: 350px;
+    height: 350px;
+  }
+  .shop-component h2,
+  .shop-component p {
+    font-size: 18px;
+  }
+  .GridSection section {
+    margin: 0 240px;
+  }
+  .section-text-large {
+    font-size: 280px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 18px;
+  }
+  .slide {
+    max-width: 330px;
+    height: 330px;
+  }
+  .GridSection section {
+    margin: 0 233px;
+  }
+
+  .shop-component {
+    max-width: 300px;
+    height: 300px;
+  }
+  .shop-component h2,
+  .shop-component p {
+    font-size: 16px;
+  }
+  .section-text-large {
+    font-size: 260px;
+  }
+  .reviewSection .review > p {
+    font-size: 18px;
+  }
+  .section-text {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .Navbar {
+    padding: 15px 0;
+  }
+  .Navbar section {
+    margin: 0 15px;
+  }
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 16px;
+  }
+  .heroSection span,
+  .midSection .content p {
+    font-size: 150px;
+  }
+  .slide {
+    max-width: 315px;
+    height: 315px;
+  }
+  .collection span {
+    font-size: 45px;
+  }
+  .gradient {
+    height: 100px;
+  }
+  .gradient h3,
+  .reviewSection .review > p {
+    font-size: 16px;
+  }
+  .shop-component {
+    max-width: 280px;
+    height: 280px;
+  }
+  .GridSection section {
+    margin: 0 227px;
+  }
+  .reviewSection .right > div {
+    font-size: 14px;
+  }
+  .section-text-large {
+    font-size: 230px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .slide {
+    max-width: 300px;
+    height: 300px;
+  }
+  .gradient {
+    height: 80px;
+  }
+
+  .shop-component {
+    max-width: 250px;
+    height: 250px;
+  }
+  .gradient h3,
+  .reviewSection .review > p {
+    font-size: 14px;
+  }
+  .section-text-large {
+    font-size: 220px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Navbar {
+    padding: 10px 0;
+  }
+  .Navbar section {
+    margin: 0 10px;
+  }
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 12px;
+  }
+  .heroSection span,
+  .midSection .content p,
+  .section-text-large {
+    font-size: 120px;
+  }
+  .slide {
+    max-width: 235px;
+    height: 235px;
+  }
+  .collection span {
+    font-size: 35px;
+  }
+  .gradient {
+    height: 65px;
+  }
+  .gradient h3,
+  .reviewSection .review > p {
+    font-size: 12px;
+  }
+  .shop-component {
+    max-width: 180px;
+    height: 180px;
+  }
+  .GridSection section {
+    margin: 0 208px;
+  }
+  .shop-component h2,
+  .shop-component p {
+    font-size: 12px;
+  }
+  .shop-component-image {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .heroSection span,
+  .midSection .content p {
+    font-size: 100px;
+  }
+  .slide {
+    max-width: 180px;
+    height: 180px;
+  }
+  .gradient {
+    height: 50px;
+  }
+  .gradient h3,
+  .reviewSection .review > p {
+    font-size: 11px;
+  }
+  .GridSection section {
+    margin: 0 120px;
+  }
+  .shop-component {
+    max-width: 165px;
+    height: 165px;
+  }
+  .section-text-large {
+    font-size: 120px;
+  }
+  .section-text {
+    font-size: 30px;
+  }
+  .shop-now > p {
+    font-size: 11px;
+  }
+  .reviewSection .right > div {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heroSection span,
+  .midSection .content p {
+    font-size: 50px;
+  }
+  .one {
+    display: none;
+  }
+  .two {
+    width: 100%;
+  }
+  .heroSection section {
+    padding: 10px;
+  }
+  .heroSection {
+    height: 80vh;
+  }
+  .collection {
+    height: 60vh;
+  }
+  .slide,
+  .shop-component {
+    max-width: 100%;
+    width: 100%;
+    height: 100vw;
+  }
+  .collection section,
+  .GridSection section {
+    margin: 0 20px;
+  }
+  .gradient h3 {
+    font-size: 20px;
+  }
+  .gradient {
+    height: 160px;
+  }
+  .GridSection .row1,
+  .GridSection .row2 {
+    flex-direction: column;
+  }
+  .shop-component {
+    margin-bottom: 20px;
+  }
+  .reviewSection .right {
+    display: none;
+  }
+  .reviewSection .left {
+    width: 100%;
+  }
+  .reviewSection .review > p {
+    font-size: 20px;
+  }
+  .reviewSection .slick-slide > div {
+    margin: 0 20px;
+  }
+  .reviewSection .left {
+    padding: 20px 0;
+  }
+  .section-text-large {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-text-large {
+    font-size: 80px;
+  }
+  .collection {
+    height: 120vh;
+  }
+}

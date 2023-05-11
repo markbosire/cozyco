@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "White Oak Chair",
+      "url": "./images/1.png",
+      "price": 5000
+    },
+    {
+      "name": "Hardwood Stool",
+      "url": "./images/2.png",
+      "price": 2000
+    },
+    {
+      "name": "Sculpture",
+      "url": "./images/3.png",
+      "price": 10000
+    },
+    {
+      "name": "Golden Lamp",
+      "url": "./images/4.png",
+      "price": 8000
+    },
+    {
+      "name": "White Oak Chair",
+      "url": "./images/1.png",
+      "price": 5000
+    },
+    {
+      "name": "Hanging Gold Lamp",
+      "url": "./images/5.png",
+      "price": 12000
+    }
+  ]
+}
